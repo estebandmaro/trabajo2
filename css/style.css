@@ -1,0 +1,132 @@
+/* ==========================================================================
+   ESTILOS BASE - TAREA 1
+   ========================================================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+header {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 20px;
+}
+
+main {
+    background-color: #f7fafc;
+    font-size: 1.15rem;
+    padding: 30px;
+    min-height: 400px;
+}
+
+footer {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* REQUISITO: Comentar el estilo existente para el elemento li */
+/* 
+li {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+}
+*/
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', Times, New Roman, serif;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main a {
+    color: #2b6cb0;
+    font-weight: bold;
+}
+
+footer a {
+    color: #e2e8f0;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+/* ==========================================================================
+   NUEVOS ESTILOS Y ACCESIBILIDAD - TAREA 2
+   ========================================================================== */
+
+/* 1. Función "Saltar al contenido principal" (Oculto por defecto, visible con Tab) */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #2b6cb0;
+    color: #ffffff;
+    padding: 10px 15px;
+    z-index: 100;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* 2. Modificación del elemento nav (inline-block y ancho de aprox 80%) */
+nav {
+    background-color: #2d3748;
+    padding: 10px;
+    display: inline-block;
+    width: 80%;
+}
+
+/* 3. Selector descendente para dar estilo SOLO a la imagen en el nav (ancho aprox 10%) */
+nav img {
+    width: 10%;
+}
+
+/* 4. Clase grid: Rejilla de dos columnas (aprox 40% cada una) con ajustes de alineación */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around; 
+    align-items: center;           
+    row-gap: 20px;                 
+}
+
+/* 5. Selector descendente: SOLO imágenes de la clase grid (ancho al 100%) */
+.grid img {
+    width: 100%;
+}
+
+/* 6. Clase flex: Activa flexbox, envoltura flexible y espaciado simétrico */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
